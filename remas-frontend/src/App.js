@@ -1,12 +1,11 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import {default as ListAdminsComponent} from './components/ListAdminsComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1> welcome to remas!</h1>
-      </header>
+    <div className="container">
+      <ListAdminsComponent/>
     </div>
   );
 }
