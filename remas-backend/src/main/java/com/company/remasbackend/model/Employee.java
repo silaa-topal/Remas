@@ -9,10 +9,8 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "first_name")
-    private String first_name;
-    @Column(name = "last_name")
-    private String last_name;
+    @Column(name = "full_name")
+    private String full_name;
     @Column(name = "work_place")
     private String work_place;
     @Column(name = "job")
@@ -25,27 +23,18 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String first_name, String last_name, String work_place, String job) {
-        this.first_name = first_name;
-        this.last_name = last_name;
+    public Employee(String full_name, String work_place, String job) {
+        this.full_name = full_name;
         this.work_place = work_place;
         this.job = job;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFull_name() {
+        return full_name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
-    }
-
-    public String getLast_name() {
-        return last_name;
-    }
-
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setFull_name(String full_name) {
+        this.full_name = full_name;
     }
 
     public String getWork_place() {

@@ -45,5 +45,4 @@ public class Restaurant {
     public void setTables(int tables) {
         this.tables = tables;
     }
-
 }
