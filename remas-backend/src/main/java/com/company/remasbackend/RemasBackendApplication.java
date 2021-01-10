@@ -1,4 +1,4 @@
-package com.example.remasbackend;
+package com.company.remasbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
