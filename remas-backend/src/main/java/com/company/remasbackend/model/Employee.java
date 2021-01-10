@@ -3,7 +3,7 @@ package com.company.remasbackend.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employees")
+@javax.persistence.Table(name = "employees")
 public class Employee {
 
     @Id
