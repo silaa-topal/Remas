@@ -32,7 +32,7 @@ public class MenuController {
     return menuRepository.findAll();
     }
     
-    @PostMapping("/reservations")
+    @PostMapping("/menu")
     public Menu createMenu(@RequestBody Menu admin){
     return menuRepository.save(admin);
     }
