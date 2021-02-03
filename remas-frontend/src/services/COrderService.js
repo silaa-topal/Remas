@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const Order_LIST = "http://localhost:8080/api/v1/chef/orders"
+const Order_LIST = "http://localhost:8080/api/v1/orders"
 
 class COrderService{
 
