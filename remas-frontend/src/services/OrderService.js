@@ -8,7 +8,7 @@ class OrderService{
         return axios.get(Order_LIST);
     }
     updateCOrders(id){
-        return axios.get(Order_LIST);
+        return axios.patch(Order_LIST,id);
     }
 
     
