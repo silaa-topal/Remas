@@ -1,9 +1,9 @@
-package com.example.remasbackend.model;
+package com.company.remasbackend.model;
 
 import javax.persistence.*;
 import java.util.List;
 import java.util.*;
-import com.example.remasbackend.model.order;
+import com.company.remasbackend.model.Order;
 
 import static java.awt.SystemColor.menu;
 
@@ -16,7 +16,7 @@ public class receipt {
     private long id;
     @OneToMany
     @Column(name = "orders")// will be changed
-    private List<order> orders;
+    private List<Order> orders;
     @Column(name = "dateCreated")
     private Date dateCreated = new Date() ;
 
@@ -25,11 +25,14 @@ public class receipt {
     public receipt() {
     }
 
-    public receipt(List<order> products) {
+    public receipt(List<Order> products) {
         this.orders = orders;
     }
     
-    public void addOrder(order order){
+    public void addOrder(Order order){
         orders.add(order);
+    }
+    public Date dCreated(){
+        return dateCreated;
     }
 }

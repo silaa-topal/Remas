@@ -32,7 +32,7 @@ public class tableController {
         return ResponseEntity.ok(Table);
     }
 
-    @PostMapping("/tables")
+    @PatchMapping("/tables")
     public void changeCapacity(@PathVariable Long id, int capacity){
         table changed = TableRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Table not exist with id : "+id));
         changed.setCapacity(capacity);
