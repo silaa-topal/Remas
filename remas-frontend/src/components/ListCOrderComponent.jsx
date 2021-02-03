@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import OrderService from '../services/OrderService';
+import OrderService from '../services/COrderService';
 
-class ListOrderComponent extends Component {
+class ListCOrderComponent extends Component {
     constructor(props){
         super(props)
 
@@ -37,4 +37,4 @@ class ListOrderComponent extends Component {
     }
 }
 
-export default ListOrderComponent;
+export default ListCOrderComponent;

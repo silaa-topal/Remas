@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const Order_LIST = "http://localhost:8080/api/v1/admins"
+const Order_LIST = "http://localhost:8080/api/v1/chef/orders"
 
-class OrderService{
+class COrderService{
 
     getOrders(){
         return axios.get(Order_LIST);
@@ -14,4 +14,4 @@ class OrderService{
     
 }
 
-export default new OrderService()
+export default new COrderService()
